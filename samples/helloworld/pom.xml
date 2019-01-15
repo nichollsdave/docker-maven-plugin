@@ -18,7 +18,7 @@
 
 
   <artifactId>dmp-sample-helloworld</artifactId>
-  <version>0.28-SNAPSHOT</version>
+  <version>0.28.0</version>
   <packaging>jar</packaging>
   <name>dmp-sample-helloworld</name>
 
@@ -92,13 +92,6 @@
             <goals>
               <goal>build</goal>
               <goal>save</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>docker:start</id>
-            <phase>install</phase>
-            <goals>
-              <goal>run</goal>
             </goals>
           </execution>
         </executions>
