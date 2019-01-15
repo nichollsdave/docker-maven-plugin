@@ -85,7 +85,15 @@
             </image>
           </images>
         </configuration>
-        <executions>
+	<executions>
+          <execution>
+            <id>docker:save</id>
+            <phase>package</phase>
+            <goals>
+              <goal>build</goal>
+              <goal>save</goal>
+            </goals>
+          </execution>
           <execution>
             <id>docker:start</id>
             <phase>install</phase>
